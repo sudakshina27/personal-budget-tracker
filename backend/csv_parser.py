@@ -39,11 +39,13 @@ def import_csv(file_path):
     conn.commit()
     conn.close()
 
-    print(f"Done. {inserted} rows inserted.")
+    #print(f"Done. {inserted} rows inserted.")
     if errors:
         print(f"{len(errors)} errors:")
         for e in errors:
             print(" ", e)
+
+    return inserted
 
 if __name__ == "__main__":
     import_csv("../data/sample.csv")
