@@ -1,3 +1,15 @@
+#Database
 data/budget.db
+
+#Python
 __pycache__/
 *.pyc
+
+#Uploads
+backend/uploaded_file
+
+#Environment
+.env
+
+#Node
+frontend/node_modules
