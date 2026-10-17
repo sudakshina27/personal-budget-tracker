@@ -14,7 +14,8 @@ init_db()
 #Allow the React dev server (Vite) to call this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173",
+                   "https://personal-budget-tracker-ruby.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
