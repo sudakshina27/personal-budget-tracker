@@ -74,3 +74,8 @@ budget-tracker/
 
 A sample CSV is included in `data/sample.csv`. 
 Use the Import CSV button in the dashboard to load it.
+
+## Live Demo
+
+- Frontend: https://personal-budget-tracker-ruby.vercel.app
+- Backend API: https://personal-budget-tracker-vgj9.onrender.com/docs
