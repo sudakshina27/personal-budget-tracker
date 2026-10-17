@@ -8,6 +8,8 @@ from csv_parser import import_csv
 import os
 
 app = FastAPI()
+from db import init_db
+init_db()
 
 #Allow the React dev server (Vite) to call this API
 app.add_middleware(
