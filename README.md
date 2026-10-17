@@ -51,18 +51,21 @@ Open `http://localhost:5173` in your browser.
 ---
 
 ## Project Structure
+
+```
 budget-tracker/
 ├── backend/
-│ ├── main.py # FastAPI endpoints
-│ ├── queries.py # SQL logic
-│ ├── csv_parser.py # CSV import and validation
-│ └── db.py # Database connection
+│   ├── main.py          # FastAPI endpoints
+│   ├── queries.py       # SQL logic
+│   ├── csv_parser.py    # CSV import and validation
+│   └── db.py            # Database connection
 ├── frontend/
-│ └── src/
-│ ├── components/ # React components
-│ └── api.js # API calls
+│   └── src/
+│       ├── components/  # React components
+│       └── api.js       # API calls
 └── data/
-└── sample.csv # Sample data to test with
+    └── sample.csv       # Sample data to test with
+```
 
 
 ---

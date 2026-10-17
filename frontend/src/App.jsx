@@ -6,12 +6,18 @@ import ImportCSV from "./components/ImportCSV"
 
 function App() {
   return (
-    <div>
+    <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
       <h1>Budget Tracker</h1>
       <ImportCSV />
       <SummaryCards />
-      <CategoryChart />
-      <MonthlyChart />
+      <div style={{ display: "flex", gap: "20px", padding: "0 30px 30px" }}>
+        <div style={{ flex: 1 }}>
+          <CategoryChart />
+        </div>
+        <div style={{ flex: 1 }}>
+          <MonthlyChart />
+        </div>
+      </div>
       <TransactionTable />
     </div>
   )
