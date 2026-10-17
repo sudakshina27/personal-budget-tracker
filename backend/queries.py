@@ -28,7 +28,7 @@ def category_summary():
 
     print("--- Spending by category ---")
     cursor.execute("""
-        SELECT category, ROUND(SUM(amount),2) as total
+        SELECT category, ROUND(ABS(SUM(amount)),2) as total
         FROM transactions
         WHERE amount < 0
         GROUP BY category

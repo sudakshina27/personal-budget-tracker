@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, UploadFile
-from db import get_connection 
+from fastapi.middleware.cors import CORSMiddleware
+from db import get_connection
 from queries import all_transactions
 from queries import category_summary
 from queries import monthly_summary
@@ -7,6 +8,14 @@ from csv_parser import import_csv
 import os
 
 app = FastAPI()
+
+#Allow the React dev server (Vite) to call this API
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 #Setting up Upload directory
 upload_dir = "uploaded_file"
